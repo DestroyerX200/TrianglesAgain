@@ -40,5 +40,13 @@ public class Tester {
 		System.out.println(y.toString());
 		System.out.println(z.toString());
 		System.out.println(alpha.toString());
+
+		System.out.println(); //setVertex test cases
+
+		System.out.println(x.toString());
+
+		x.setVertex(0, new Point(3.141, 59));
+		x.setVertex(1, new Point(324241, 43242));
+		System.out.println(x.toString());
     }
 }

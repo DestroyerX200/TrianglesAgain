@@ -50,4 +50,15 @@ public class Triangle{
 		vertexThree = "v3(" + this.v3.getX() + ", " + this.v3.getY() + ")";
 		return vertexOne + " " + vertexTwo + " " + vertexThree; 
 	}
+	public void setVertex(int index, Point newP) {
+		if (index == 0) {
+			this.v1 = newP;
+		}
+		if (index == 1) {
+			this.v2 = newP;
+		}
+		if (index == 2) {
+			this.v3 = newP;
+		}
+	}
 }
