@@ -27,11 +27,18 @@ public class Tester {
 		System.out.println(z.getArea());
 		System.out.println(alpha.getArea());
 
-		System.out.println();
+		System.out.println(); //classify test cases
 
 		System.out.println(x.classify());
 		System.out.println(y.classify());
 		System.out.println(z.classify());
 		System.out.println(alpha.classify());
+
+		System.out.println(); //toString test cases
+
+		System.out.println(x.toString());
+		System.out.println(y.toString());
+		System.out.println(z.toString());
+		System.out.println(alpha.toString());
     }
 }

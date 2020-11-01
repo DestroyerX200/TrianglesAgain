@@ -43,7 +43,11 @@ public class Triangle{
 			return "scalene";
 		}
 	}
-	// public String toString() {
-
-	// }
+	public String toString() {
+		String vertexOne, vertexTwo, vertexThree;
+		vertexOne = "v1(" + this.v1.getX() + ", " + this.v1.getY() + ")";
+		vertexTwo = "v2(" + this.v2.getX() + ", " + this.v2.getY() + ")";
+		vertexThree = "v3(" + this.v3.getX() + ", " + this.v3.getY() + ")";
+		return vertexOne + " " + vertexTwo + " " + vertexThree; 
+	}
 }
