@@ -23,5 +23,4 @@ public class Point{
 	public boolean equals(Point other) {
 		return (this.x == other.x && this.y == other.y);
 	}
-
 }
