@@ -19,5 +19,12 @@ public class Tester {
 		System.out.println(y.getPerimeter());
 		System.out.println(z.getPerimeter());
 		System.out.println(alpha.getPerimeter());
+
+		System.out.println();
+
+		System.out.println(x.getArea());
+		System.out.println(y.getArea());
+		System.out.println(z.getArea());
+		System.out.println(alpha.getArea());
     }
 }

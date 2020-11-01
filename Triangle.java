@@ -20,9 +20,14 @@ public class Triangle{
 		return side1 + side2 + side3;
 	}
 
-	// public double getArea() {
-
-	// }
+	public double getArea() {
+		double side1, side2, side3, s;
+		side1 = this.v1.distanceTo(this.v2);
+		side2 = this.v1.distanceTo(this.v3);
+		side3 = this.v2.distanceTo(this.v3);
+		s = this.getPerimeter() / 2.0;
+		return Math.sqrt( s*(s-side1)*(s-side2)*(s-side3) );
+	}
 	// public String classify() {
 
 	// }
