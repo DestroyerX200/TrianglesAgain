@@ -7,7 +7,7 @@ public class Tester {
 		System.out.println(a.equals(b));
 		System.out.println(a.equals(c));
 
-		System.out.println();
+		System.out.println(); //defining triangles and getPerimeter testcases
 
 		Point d = new Point(0 , 4);
 		Triangle x = new Triangle(a, b, d); // perimeter = 12; area = 6; scalene
@@ -20,11 +20,18 @@ public class Tester {
 		System.out.println(z.getPerimeter());
 		System.out.println(alpha.getPerimeter());
 
-		System.out.println();
+		System.out.println(); //getArea test cases
 
 		System.out.println(x.getArea());
 		System.out.println(y.getArea());
 		System.out.println(z.getArea());
 		System.out.println(alpha.getArea());
+
+		System.out.println();
+
+		System.out.println(x.classify());
+		System.out.println(y.classify());
+		System.out.println(z.classify());
+		System.out.println(alpha.classify());
     }
 }

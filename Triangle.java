@@ -28,9 +28,21 @@ public class Triangle{
 		s = this.getPerimeter() / 2.0;
 		return Math.sqrt( s*(s-side1)*(s-side2)*(s-side3) );
 	}
-	// public String classify() {
-
-	// }
+	public String classify() {
+		double side1, side2, side3;
+		side1 = Math.round( 10000 * this.v1.distanceTo(this.v2) / 10000);
+		side2 = Math.round( 10000 * this.v1.distanceTo(this.v3) / 10000);
+		side3 = Math.round( 10000 * this.v2.distanceTo(this.v3) / 10000);
+		if (side1 == side2 && side1 == side3) {
+			return "equilateral";
+		}
+		else if (side1 == side2 || side2 == side3 || side1 == side3) {
+			return "isosceles";
+		}
+		else {
+			return "scalene";
+		}
+	}
 	// public String toString() {
 
 	// }
